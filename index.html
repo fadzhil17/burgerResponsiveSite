@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Burger House</title>
+</head>
+<body>
+
+        <nav class="navbar">
+            <a href="#" class="navbar-logo">
+                <img src="./img/logo.png" alt="burger House Logo">
+            </a>
+            
+            <div class="navbar-nav">
+                <div class="delivery-container">
+                        <img  src="./img/delivery-icon.png" alt="delivery-icon">
+                    <span class="delivery">
+                        Express Delivery +1 234 567 890
+                    </span>
+                </div>
+                    <a href="#" class="exit" style="size: 28px;">X</a>
+                    <a href="#main">HOME</a>
+                    <a href="#">MENU</a>
+                    <a href="#">OUR STORY</a>
+                    <a href="#">CONTACT US</a>
+                    <a id="myCart" class="cart" href="#">
+                        <img src="./img/cart.png" alt="cart">
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+            </div>
+                
+            <a href="#" id="hamburger"><img src="./img/menu-mobile.png" alt="hamburger">
+            </a>
+
+            <div id="myModalCart" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h2>SHOPPING CART</h2>
+                      <span class="close">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <ul id="cart"></ul>
+                    <div id="subtotal"></div> 
+                    <div id="tax"></div>
+                    <div id="total"></div>
+                  </div>
+                  <div class="modal-footer">
+                        <button id="continue-shopping">CONTINUE SHOPPING</button>
+                        <button id="checkout">CHECKOUT</button>
+                    </div>
+                </div>
+              
+            </div>
+
+        </nav>
+        
+        <section id="hero" class="hero">
+            <div class="hero-content" id="hero-context">
+                <div class="hero-text">
+                    <img src="./img/main-subtitle.png" alt="">
+                    <h1>BURGER</h1>
+                    <h2>WEEK</h2>   
+                </div>
+                <div class="hero-image">
+                    <img src="./img/main-burger.png" alt="Burger Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="image-container">
+            <div class="image-item left">
+              <img src="./img/left-banner.png" alt="Most Popular Burger">
+            </div>
+            <div class="right-column">
+              <div class="image-item">
+                <img src="./img/right-bannertop.png" alt="More Fun More Taste">
+              </div>
+              <div class="image-item">
+                <img src="./img/right-bannerbottom.png" alt="Fresh & Chili">
+              </div>
+            </div>
+        </section>
+
+        <section class="tagline-container">
+            <div class="tagline">
+                ALWAYS TASTY BURGER
+            </div>
+            <h1 class="title">CHOOSE & ENJOY</h1>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="row">
+                <div class="menu-card">
+                    <div class="menu-1">
+                        <img src="./img/burger2.png" alt="">
+                        <h2>Classic Cheeseburger</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum deserunt recusandae sunt velit adipisci.</p>
+                        <div class="price" hidden>RM 18</div>
+                        
+                        <button>ADD TO CART</button>
+                        
+                    </div>
+
+                    <div class="menu-2">
+                        <img src="./img/burger1.png" alt="">
+                        <h2>BBQ Bacon Burger</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, maiores. Laudantium, aperiam nihil?</p>
+                        <div class="price" hidden>RM 14</div>
+
+                        <button>ADD TO CART</button>
+
+                    </div>
+
+                    <div class="menu-3">
+                        <img src="./img/burger2.png" alt="">
+                        <h2>LOREM IPSUM DOLOR</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, maiores. Laudantium, aperiam nihil?</p>
+                        <div class="price" hidden>RM 17</div>
+                        
+                        <button>ADD TO CART</button>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        
+    <!-- My JS -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
